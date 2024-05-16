@@ -60,6 +60,8 @@ function Delete_user(index) {
                 <button id="deletebtn" onclick="Delete_user(${index})">Delete User</button>
             </div>`
             });
+    document.getElementById("status2").style.display="none";
+    document.getElementById("status1").style.display="none";
 
     if(emparry.length == 0)
         {

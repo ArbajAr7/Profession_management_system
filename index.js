@@ -1,4 +1,5 @@
 let emparry = [];
+let Id= 0;
 function Process_And_Add() {
 
     let name_value = document.getElementById("enter_name_input").value;
@@ -16,7 +17,9 @@ function Process_And_Add() {
             document.getElementById("enter_profession_input").value="";
             document.getElementById("enter_age_input").value="";
             console.log(name_value+" "+profession_value+" "+age_value);
+            Id += 1;
             let obj = {
+                Id: Id,
                 Name:name_value,
                 Profession:profession_value,
                 Age: age_value
